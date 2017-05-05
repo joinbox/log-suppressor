@@ -6,7 +6,11 @@ class LogSuppressor {
     this.checkSessionStorageSupport();
     this.checkLogSuppression();
 
-    Object.assign(this, window.console)
+    Object.assign(this, window.console);
+
+    this._log = this.log;
+    this._info = this.info;
+
     window.console = this;
 
     if (!this.doNotSuppressLog) {
@@ -33,9 +37,6 @@ class LogSuppressor {
    * @return {void}
    */
   suppress() {
-    this._log = this.log;
-    this._info = this.info;
-
     this.log = () => {};
     this.info = () => {};
 

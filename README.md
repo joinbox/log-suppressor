@@ -20,11 +20,11 @@ If you are using the dist file in a ES2015 environment make sure to include the 
 
 ### Commands
 
-#### `console.restore()`
+`console.restore()`
 
 If you need to restore the logs on your production system you can use `console.restore()` in the developer console of your browser. All further logs in the same session will be logged.
 The restore command writes a Key in the SessionStorage to prevent log suppression.
 
-#### `console.suppress()`
+`console.suppress()`
 
 If you want to suppress the logs you can call `console.suppress()`. The suppress command is called by default.

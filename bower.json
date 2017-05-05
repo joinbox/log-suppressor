@@ -1,0 +1,25 @@
+{
+  "name": "log-suppressor",
+  "homepage": "https://github.com/joinbox/log-suppressor",
+  "authors": [
+    "Lorenzo Kappeler <me@lnk.codes>"
+  ],
+  "description": "A js library which supresses console.log and console.info output",
+  "main": "src/app.js",
+  "keywords": [
+    "JavasScript",
+    "js",
+    "log",
+    "suppression",
+    "suppress",
+    "console"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
